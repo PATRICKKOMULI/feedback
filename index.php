@@ -1,162 +1,163 @@
-
- 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Feedback Form</title>
-  <link rel="stylesheet" href="style.css">
-  <script>
-      window.onload = function() {
-        alert("There is an error with the ssl certificate. ");
-      }
-    </script>
-</head>
-<body>
-  <div class="container">  
-    <form id="contact" action="insert.php" method="post" onsubmit="this.submit(); this.reset();>
-      <table>
-        <tr>
-          <td><img src="NHL.png" alt="logo" width="100" height="90"> </td>
-          <td><h3>FEEDBACK FORM</h3>
-            <div align= centre><h4> CUSTOMER CARE HELPLINE:<img src="png.png" alt="logo" width="15" height="15">
-              <img src="phone.png" alt="logo" width="15" height="15"> 0776 970 220</h4></div></td>
-        </tr>
-      </table>
-    
- <table>
-   <tr>
-     <td>
-       <fieldset>
-      <label for="name"><strong>Name</strong></label>
-      <input placeholder="Your Name (optional)" name="name" type="textbox" tabindex="2">
-    </fieldset>
-  </td>
-  <td></td>
-  <td></td>
-  <td></td>
-
-     <td>
-       <fieldset>
-      <label for="date"><strong>Date</strong></label>
-      <input  name="date" type="date" tabindex="1" autofocus>
-    </fieldset>
-  </td>
-  </tr>
-</table>
-     
-      
-      <h4><div align="center";> <p><strong>How do you feel about the service you recieved?</strong> </p></div></h4>
-      <hr>
-
-      <fieldset id="waiting">
-        <label for="date"><strong>Waiting Time</strong> </label>
-        <p>
-          <table border="0" >
-            <tr >
-            <td><h4><label><input type="radio" value="Acceptable" name="waiting">Acceptable</label></h4></td>
-            <td></td> <td></td>
-            <td><h4><label><input type="radio" value="Unacceptable" name="waiting">Unacceptable</label></h4></td>
-          </tr>
-        </table>
-        
-        
-      </p>
-      </fieldset>
-    
-      <fieldset id="group2">
-        <label for="quality"><strong>Quality Of Customer Care</strong></label>
-        <p>
-          <table cellspacing="8" cellpading="0">
-            <tr>
-            <td><h4><label><input type="radio" value="Very Good" name="quality">Very Good</label></h4></td>
-            <td><h4><label><input type="radio" value="Good" name="quality">Good</label></h4></td>
-        <td><h4><label><input type="radio" value="Poor" name="quality">Poor</label></h4></td>
-          </tr>
-        </table>
-        
-        
-        
-      </p>
-      </fieldset>
-
-      <fieldset id="environment">
-        <label for="date"><strong>Environment/Atmosphere</strong></label>
-      <p>
-        <table cellspacing="8" cellpading="0">
-          <tr>
-          <td><h4><label><input type="radio" value="Very Good" name="Environment">Very Good</label></h4></td>
-          <td> <h4><label><input type="radio" value="Good" name="Environment">Good</label></h4></td>
-          <td> <h4><label><input type="radio" value="Poor" name="Environment">Poor</label></h4></td>
-        </tr>
-      </table>
-        
-
-        
-      </p>
-      </fieldset>
-
-      <fieldset id="experience">
-        <label for="experience"><strong>Overall Experience</strong> </label>
-      <p>
-        <table cellspacing="8" cellpading="0">
-          <tr>
-        <td><h4><label><input type="radio" value="Very Good" name="experience">Very Good</label></h4></td>
-        <td><h4><label><input type="radio" value="Good" name="experience">Good</label></h4></td>
-        <td><h4><label><input type="radio" value="Poor" name="experience">Poor</label></h4></td>
-        </tr>
-      </table>
-        
-      </p>
-      </fieldset>
-
-      <fieldset id="scale">
-        <h6><label for="scale"><strong>On a scale of 1-10, how likely are you to recommend the hospital?</strong></label></h6>
-      <p>
-        <table cellspacing="8" cellpading="0">
-          <tr>
-          <td><h4><label><input type="radio" value="1" name="scale">1</label></h4></td>
-          <td><h4><label><input type="radio" value="2" name="scale">2</label></h4></td>
-          <td><h4><label><input type="radio" value="3" name="scale">3</label></h4></td>
-          <td><h4><label><input type="radio" value="4" name="scale">4</label></h4></td>
-          <td><h4><label><input type="radio" value="5" name="scale">5</label></h4></td>
-          <td><h4><label><input type="radio" value="6" name="scale">6</label></h4></td>
-          <td><h4><label><input type="radio" value="7" name="scale">7</label></h4></td>
-          <td><h4><label><input type="radio" value="8" name="scale">8</label></h4></td>
-          <td><h4><label><input type="radio" value="9" name="scale">9</label></h4></td>
-          <td><h4><label><input type="radio" value="10" name="scale">10</label></h4></td>
-        </tr>
-      </table>
-
-        
-      </p>
-      </fieldset>
-
-      <fieldset>
-        <h6><label for="scale"><strong>Please let us know how we can improve</strong></label></h6>
-        <textarea rows = "6" cols = "100" name = "improve"></textarea>
-      </fieldset>
-      
-      <fieldset>
-        <button type="submit" name="submit" id="contact-submit" data-submit="...Sending">Submit Now</button>
-      </fieldset>
-    </form>
-    
-     
-  </div>
-</body>
-<SCRIPT language=JavaScript>
-
-
-var message = "Right Click is Disabled by Sebwato";
-
-function rtclickcheck(keyp){ if (navigator.appName == "Netscape" && keyp.which == 3){ alert(message); return false; }
-
-if (navigator.appVersion.indexOf("MSIE") != -1 && event.button == 2) { alert(message); return false; } }
-
-document.onmousedown = rtclickcheck;
-
-</SCRIPT>
+<?php
+// Initialize the session
+session_start();
+ 
+// Check if the user is already logged in, if yes then redirect him to welcome page
+if(isset($_SESSION["loggedin"]) && $_SESSION["loggedin"] === true){
+    header("location: dashboard.php");
+    exit;
+}
+ 
+// Include config file
+require_once "conn.php";
+ 
+// Define variables and initialize with empty values
+$username = $password = "";
+$username_err = $password_err = $login_err = "";
+ 
+// Processing form data when form is submitted
+if($_SERVER["REQUEST_METHOD"] == "POST"){
+ 
+    // Check if username is empty
+    if(empty(trim($_POST["username"]))){
+        $username_err = "Please enter username.";
+    } else{
+        $username = trim($_POST["username"]);
+    }
+    
+    // Check if password is empty
+    if(empty(trim($_POST["password"]))){
+        $password_err = "Please enter your password.";
+    } else{
+        $password = trim($_POST["password"]);
+    }
+    
+    // Validate credentials
+    if(empty($username_err) && empty($password_err)){
+        // Prepare a select statement
+        $sql = "SELECT id, username, password FROM users WHERE username = ?";
+        
+        if($stmt = mysqli_prepare($conn, $sql)){
+            // Bind variables to the prepared statement as parameters
+            mysqli_stmt_bind_param($stmt, "s", $param_username);
+            
+            // Set parameters
+            $param_username = $username;
+            
+            // Attempt to execute the prepared statement
+            if(mysqli_stmt_execute($stmt)){
+                // Store result
+                mysqli_stmt_store_result($stmt);
+                
+                // Check if username exists, if yes then verify password
+                if(mysqli_stmt_num_rows($stmt) == 1){                    
+                    // Bind result variables
+                    mysqli_stmt_bind_result($stmt, $id, $username, $hashed_password);
+                    if(mysqli_stmt_fetch($stmt)){
+                        if(password_verify($password, $hashed_password)){
+                            // Password is correct, so start a new session
+                            session_start();
+                            
+                            // Store data in session variables
+                            $_SESSION["loggedin"] = true;
+                            $_SESSION["id"] = $id;
+                            $_SESSION["username"] = $username;                            
+                            
+                            // Redirect user to welcome page
+                            header("location: dashboard.php");
+                        } else{
+                            // Password is not valid, display a generic error message
+                            $login_err = "Invalid username or password.";
+                        }
+                    }
+                } else{
+                    // Username doesn't exist, display a generic error message
+                    $login_err = "Invalid username or password.";
+                }
+            } else{
+                echo "Oops! Something went wrong. Please try again later.";
+            }
+
+            // Close statement
+            mysqli_stmt_close($stmt);
+        }
+    }
+    
+    // Close connection
+    mysqli_close($conn);
+}
+?>
+ 
+
+<!DOCTYPE html>
+<html lang="en">
+    
+<head>
+        <title>Nakasero Feedback</title><meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="css/bootstrap.min.css" />
+		<link rel="stylesheet" href="css/bootstrap-responsive.min.css" />
+        <link rel="stylesheet" href="css/maruti-login.css" />
+    </head>
+    <body>
+        <div id="loginbox">            
+        <form id="loginform" class="form-vertical" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">
+				 <div class="control-group normal_text"> <h3><img src="img/logo1 (1).png" alt="Logo" /></h3></div>
+                 
+
+
+
+<?php 
+if(!empty($login_err)){
+echo '<div class="alert alert-danger">' . $login_err . '</div>';
+}        
+?>
+<div class="controls">
+                        <div class="main_input_box">
+Username
+<input type="text" name="username" class="form-control <?php echo (!empty($username_err)) ? 'is-invalid' : ''; ?>" value="<?php echo $username; ?>">
+<span class="invalid-feedback"><?php echo $username_err; ?></span>
+</div>
+</div>
+
+<div class="controls">
+                        <div class="main_input_box">
+Password
+<input type="password" name="password" class="form-control <?php echo (!empty($password_err)) ? 'is-invalid' : ''; ?>">
+<span class="invalid-feedback"><?php echo $password_err; ?></span>
+</div>
+</div>
+
+<div class="controls">
+                        <div class="main_input_box">
+<input type="submit" class="btn btn-primary" value="Login">
+<input type="button" class="btn btn-danger" value="Cancel">
+</div>
+</div>
+
+
+</form>
+
+
+            </form>
+            <form id="recoverform" action="#" class="form-vertical">
+				<p class="normal_text">Enter your e-mail address below and we will send you instructions how to recover a password.</p>
+				
+                    <div class="controls">
+                        <div class="main_input_box">
+                            <span class="add-on"><i class="icon-envelope"></i></span><input type="text" placeholder="E-mail address" />
+                        </div>
+                    </div>
+               
+                <div class="form-actions">
+                    <span class="pull-left"><a href="#" class="flip-link btn btn-inverse" id="to-login">&laquo; Back to login</a></span>
+                    <span class="pull-right"><input type="submit" class="btn btn-info" value="Recover" /></span>
+                </div>
+            </form>
+        </div>
+        
+        <script src="js/jquery.min.js"></script>  
+        <script src="js/maruti.login.js"></script> 
+    </body>
+
 </html>
